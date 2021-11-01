@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet" />
+        <title>Benhauer-Popup</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form" id="form">
+                <header>
+                    <h1 class="header-title">WITAJ!</h1>
+                    <p class="header-text">
+                        WYPEŁNIJ FORMULARZ I ZGARNIJ<br>
+                        <span class="header-text-color">KUPON RABATOWY</span> DO WYKORZYSTANIA<br>
+                        PRZY NAJBLIŻSZYCH ZAKUPACH
+                    </p>
+                </header>
+                <main>
+                    <label>
+                        <input class="main-input" type="email" id="email" name="email" placeholder="EMAIL" required/>
+                    </label>
+                    <label>
+                        <input class="main-input" type="text" id="name" name="name" placeholder="IMIĘ" required/>
+                    </label>
+                </main>
+                <footer>
+                    <div class="form-footer">
+                        <label>
+                            <input id="consent" class="consent" type="checkbox" required />
+                        </label>
+                        <p class="footer-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <button id="button" class="form-btn" type="submit" onclick="absorb()">wyślij</button>
+                </footer>
+            </div>
+            <div class="thank-you" id="thank-you">
+                <h1 class="ty-title">
+                    DZIĘKUJEMY <span id="showName"class="ty-name"></span>!
+                </h1>
+                <p class="ty-text">ZA WYPEŁNIENIE FORMULARZA, <br>
+                KOD RABATOWY CZEKA NA <br>
+                CIEBIE NA TWOJEJ SKRZYNCE <br>
+                MAILOWEJ</p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

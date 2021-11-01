@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    color: #3a3a3a;
+}
+
+.form, 
+.thank-you {
+    background-color: #80b0b4;
+    padding: 20px 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    min-width: 280px;
+    min-height: 600px;
+    max-width: 600px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.header-title {
+    font-weight: normal;
+}
+
+.header-text {
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.header-text-color {
+    color: #185b61;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.main-input {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3a3a3a;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #185b61;
+}
+
+#email {
+    width: 245px;
+}
+
+#name {
+    width: 135px;
+}
+
+.main-input::placeholder {
+    color: #185b61;
+    opacity: 1;
+    font-weight: 590;
+    letter-spacing: -1px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-footer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.consent {
+    height: 23px;
+    width: 23px;
+    margin-right: 8px;
+    appearance: none;
+    border: solid #185b61 2px;
+    position: relative;
+}
+
+.consent:checked:after {
+    position:absolute;
+    font-family: "Material Icons";
+    content: "\e5ca";
+    top: -7px;
+    right: -7px;
+    color: #185b61;
+    font-size: 32px;
+}
+
+.footer-text {
+    font-size: 10px;
+    font-weight: bolder;
+    letter-spacing: normal;
+}
+
+.form-btn {
+    width: 120px;
+    margin: 32px 0;
+    padding: 5px;
+    font-size: 24px;
+    background: #185b61;
+    color: white;
+    border: 0;
+}
+
+.form-btn:hover {
+    cursor: pointer;
+    background: #389aa3;
+}
+
+.thank-you {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ty-title {
+    font-weight: normal;
+    text-align: center;
+    justify-content: center;
+}
+
+.ty-name {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.ty-text {
+    text-align: center;
+    margin: 18px;
+    letter-spacing: 0.2px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 500px) {
+    main {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-input {
+        margin: 8px 24px 0;
+    }
+}
